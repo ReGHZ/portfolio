@@ -20,7 +20,7 @@ const projects = [
     repoUrl: "https://github.com/ReGHZ/asdpHR",
     tags: ["Laravel", "Docker", "MySQL"],
     demoCredentials: {
-      email: "admin@asdp.com",
+      nik: "123",
       password: "123456",
     },
   },
@@ -41,7 +41,7 @@ const projects = [
     repoUrl: "https://github.com/ReGHZ/asdp-inventory",
     tags: ["Laravel", "Docker", "MySQL"],
     demoCredentials: {
-      email: "admin@admin.com",
+      email: "admin@asdp.com",
       password: "123456",
     },
   },

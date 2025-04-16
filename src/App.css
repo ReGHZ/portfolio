@@ -390,6 +390,39 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Demo Credential Styles */
+.demo-credentials {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.demo-credentials h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.demo-credentials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.demo-credentials li {
+  margin-bottom: 0.5rem;
+  color: var(--gray);
+}
+
+.demo-credentials strong {
+  color: var(--light);
+}
+
 /* Footer Styles */
 .footer {
   background: var(--dark-secondary);

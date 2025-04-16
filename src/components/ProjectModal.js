@@ -42,12 +42,14 @@ function ProjectModal({ project, onClose }) {
                 <FontAwesomeIcon icon={faKey} /> Demo Credentials
               </h4>
               <ul>
-                <li>
-                  <strong>NIK:</strong> {project.demoCredentials.nik}
-                </li>
-                <li>
-                  <strong>Password:</strong> {project.demoCredentials.password}
-                </li>
+                {Object.entries(project.demoCredentials).map(([key, value]) => (
+                  <li key={key}>
+                    <strong>
+                      {key.charAt(0).toUpperCase() + key.slice(1)}:
+                    </strong>{" "}
+                    {value}
+                  </li>
+                ))}
               </ul>
             </div>
           )}
