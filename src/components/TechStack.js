@@ -1,14 +1,15 @@
 // src/components/TechStack.js (alternatif dengan react-icons)
 import React from "react";
 import { FaNodeJs, FaJsSquare, FaLaravel } from "react-icons/fa";
-import { SiMongodb, SiMysql } from "react-icons/si";
+import { SiMongodb, SiMysql, SiPostgresql } from "react-icons/si";
 
 const icons = {
   js: <FaJsSquare />,
-  mysql: <SiMysql />,
   node: <FaNodeJs />,
-  mongodb: <SiMongodb />,
   laravel: <FaLaravel />,
+  mysql: <SiMysql />,
+  mongodb: <SiMongodb />,
+  postgreSQL: <SiPostgresql />,
 };
 
 const technologies = [
@@ -17,6 +18,7 @@ const technologies = [
   { name: "Laravel", icon: "laravel" },
   { name: "Mysql", icon: "mysql" },
   { name: "MongoDB", icon: "mongodb" },
+  { name: "PostgreSQL", icon: "postgreSQL" },
 ];
 
 function TechStack() {
