@@ -89,11 +89,13 @@ body {
   display: flex;
   align-items: center;
   padding: 8rem 2rem 4rem;
-  background: linear-gradient(
-    135deg,
-    rgba(15, 23, 42, 0.9),
-    rgba(30, 41, 59, 0.9)
-  );
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-content {
@@ -137,7 +139,13 @@ body {
 /* Tech Stack */
 .tech-stack {
   padding: 4rem 2rem;
-  background-color: var(--dark-secondary);
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+}
+
+.tech-stack .section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .tech-stack h2 {
@@ -150,7 +158,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -172,15 +180,61 @@ body {
   justify-content: center;
   font-size: 2rem;
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tech-item:hover .tech-icon {
   transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* video showcase section*/
+.project-showcase-section {
+  padding: 4rem 2rem;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.project-showcase-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.showcase-subtext {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.video-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Projects Section */
 .projects-section {
   padding: 6rem 2rem;
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    var(--dark-secondary) 50%,
+    #1e293b 100%
+  );
+  color: white;
+}
+
+.projects-section .section-inner {
   max-width: 1200px;
   margin: 0 auto;
 }

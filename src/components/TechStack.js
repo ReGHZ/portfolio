@@ -24,14 +24,16 @@ const technologies = [
 function TechStack() {
   return (
     <section className="tech-stack" id="techstack">
-      <h2>Tech Stack</h2>
-      <div className="tech-grid">
-        {technologies.map((tech, index) => (
-          <div className="tech-item" key={index}>
-            <div className="tech-icon">{icons[tech.icon]}</div>
-            <span>{tech.name}</span>
-          </div>
-        ))}
+      <div className="section-inner">
+        <h2>Tech Stack</h2>
+        <div className="tech-grid">
+          {technologies.map((tech, index) => (
+            <div className="tech-item" key={index}>
+              <div className="tech-icon">{icons[tech.icon]}</div>
+              <span>{tech.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

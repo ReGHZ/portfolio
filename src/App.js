@@ -7,6 +7,7 @@ import ProjectModal from "./components/ProjectModal";
 import Footer from "./components/Footer";
 import TechStack from "./components/TechStack";
 import projects from "./data/projects";
+import ProjectShowcaseVideo from "./components/ProjectShowcaseVideo";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -17,28 +18,34 @@ function App() {
 
       <main>
         <section className="hero-section" id="home">
-          <div className="hero-content">
-            <h1 className="gradient-text">Web Development Portfolio</h1>
-            <p className="subtitle">Back-end Developer</p>
-            <p>
-              Hi, I'm Satria — showcasing my personal web application projects
-              below.
-            </p>
+          <div className="section-inner">
+            <div className="hero-content">
+              <h1 className="gradient-text">Web Development Portfolio</h1>
+              <p className="subtitle">Back-end Developer</p>
+              <p>
+                Hi, I'm Satria — showcasing my personal web application projects
+                below.
+              </p>
+            </div>
           </div>
         </section>
 
         <TechStack />
 
+        <ProjectShowcaseVideo />
+
         <section className="projects-section" id="projects">
           <h2>My Projects</h2>
-          <div className="project-grid">
-            {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                project={project}
-                onClick={setSelectedProject}
-              />
-            ))}
+          <div className="section-inner">
+            <div className="project-grid">
+              {projects.map((project) => (
+                <ProjectCard
+                  key={project.id}
+                  project={project}
+                  onClick={setSelectedProject}
+                />
+              ))}
+            </div>
           </div>
         </section>
       </main>
